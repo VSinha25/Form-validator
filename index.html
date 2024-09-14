@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/a9e0e8c66e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a9e0e8c66e.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
+    <div class="container">
+        <h1>Sign Up Today!</h1>
+        <!-- Form -->
+        <form id="from">
+            <!-- Full Name -->
+             <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name">
+             </div>
+             <!-- Phone Number -->
+             <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="555-555-5555">
+             </div>
+             <!-- Email address -->
+             <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="abc@email.com">
+             </div>
+             <!-- Website URL -->
+             <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" placeholder="https://www.abc.com">
+             </div>
+             <!-- Password-->
+             <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" placeholder="Create Password">
+             </div>
+             <!-- Confirm Password -->
+             <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="text" id="password2" placeholder="Consfirm Password">
+             </div>
+             <button type="submit">Register</button>
+        </form>
+        <!-- Error/Success -->
+         <div class="message-container">
+            <h3 id="message">Don't hesitate!</h3>
+         </div>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
