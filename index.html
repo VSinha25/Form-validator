@@ -12,43 +12,43 @@
     <div class="container">
         <h1>Sign Up Today!</h1>
         <!-- Form -->
-        <form id="from">
+        <form id="form">
             <!-- Full Name -->
              <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Full Name"
+                <input type="text" id="name" placeholder="Full Name" name="name"
                         required minlength="3" maxlength="100">
              </div>
              <!-- Phone Number -->
              <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="555-555-5555"
+                <input type="tel" id="phone" placeholder="555-555-5555" name="phone"
                         required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
              </div>
              <!-- Email address -->
              <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" id="email" placeholder="abc@email.com"
-                        required>
+                        required name="email">
              </div>
              <!-- Website URL -->
              <div class="form-group">
                 <label for="website">Website URL</label>
                 <input type="url" id="website" placeholder="https://www.abc.com"
-                        required>
+                        required name="website">
              </div>
              <!-- Password-->
              <div class="form-group">
                 <label for="password1">Password</label>
-                <input type="password" id="password1" placeholder="Create Password (Min. 8 characters)"
-                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" 
-                        title="include atleast 1 uppercase character, 1 lowercase character & 1 number">
+                <input type="password" id="password1" placeholder="Create Password (Min: 8 characters)"
+                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,64}$" 
+                        title="include atleast 1 uppercase character, 1 lowercase character & 1 number, max: 64 characters">
              </div>
              <!-- Confirm Password -->
              <div class="form-group">
                 <label for="password2">Confirm Password</label>
-                <input type="text" id="password2" placeholder="Consfirm Password"
-                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                <input type="password" id="password2" placeholder="Confirm Password" name="password"
+                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,64}$">
              </div>
              <button type="submit">Register</button>
         </form>
